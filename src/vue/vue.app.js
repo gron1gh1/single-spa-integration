@@ -10,9 +10,14 @@ const Hello2 = {
   template: "<div>Vue Hello2</div>",
 };
 
+const Empty = {
+  template: "<div></div>",
+};
+
 const routes = [
-  { path: "/main", component: Hellos },
-  { path: "/hello", component: Hello2 },
+  { path: "/vue/main", component: Hellos },
+  { path: "/vue/hello", component: Hello2 },
+  { path: "*", component: Empty },
 ];
 Vue.use(VueRouter);
 
